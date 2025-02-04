@@ -27,7 +27,7 @@ variable "igw_tags" {
     default = {}
 }
 
-variable "public_subnet_cidr" {
+variable "public_subnet_cidrs" {
     type = list
     validation {
         condition = length(var.public_subnet_cidr) == 2
