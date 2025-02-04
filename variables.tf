@@ -30,7 +30,7 @@ variable "igw_tags" {
 variable "public_subnet_cidrs" {
     type = list
     validation {
-        condition = length(var.public_subnet_cidr) == 2
+        condition = length(var.public_subnet_cidrs) == 2
         error_message = "Please provide 2 valid public subnet CIDR"
     }
 }
