@@ -94,7 +94,7 @@ resource "aws_nat_gateway" "main" {
 
   tags = merge(
     var.common_tags,
-    var.net_gateway_tags,
+    var.nat_gateway_tags,
     {
       Name = local.resource_name
     }

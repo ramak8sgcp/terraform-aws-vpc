@@ -67,7 +67,7 @@ variable "db_subnet_group_tags" {
   default = {}
 }
 
-variable "net_gateway_tags" {
+variable "nat_gateway_tags" {
   default = {}
 }
 
